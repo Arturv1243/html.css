@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: circle;
+           list-style-position: outside;
+           background-color: aquamarine; 
+        }
+        ol {
+            background-color: rgb(162, 127, 194);
+        }
+        ol > li{
+            background-color: bisque;
+        }
+        dd{
+            font-size: 175%;
+        }
+        dt{
+            font-size: 150%;
+        }
+
+        #h2ol{
+            color: blueviolet;
+        }
+
+        .red-text{
+            color: rgb(196, 41, 41);
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1 class="red-text">Списки HTML</h1>
+    <section>
+        <h2 id="h2ol">Нумированный список (Order list)</h2>
+        <ol type="1" start="10">
+            <li>Элемент списка (List item)</li>
+            <li>Элемент списка 2 (List item)</li>
+            <li>Элемент списка 3(List item)</li>
+            <li>Элемент списка 4(List item)</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Ненумированный список (UnOrder list)</h2>
+        <ul>
+            <li>Элемент списка (List item)</li>
+            <li>Элемент списка 2 (List item)</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque reprehenderit quam dolores dolore, odit molestiae distinctio eveniet aperiam repudiandae. Et iusto ea, ducimus quam quod similique laboriosam velit facere asperiores?</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Нумированный список2 (Order list)</h2>
+        <ol>
+            <li>Элемент списка (List item)</li>
+            <li>Элемент списка 2 (List item)</li>
+        </ol>
+    </section>
+    <section>
+        <h2>Список описаний (UnOrder list)</h2>
+        <dl>
+           <dt><b>JavaScript-</b></dt>
+           <dd><i>это строго типизированный объектно-ориентированный язык программирования общего назначения. Он используется для написания серверных приложений, веб-приложений и создания других программных продуктов.</i> </dd>
+           <dt><b>Python-</b></dt>
+           <dd><i>это мультипарадигмальный высокоуровневый язык программирования общего назначения с динамической строгой типизацией и автоматическим управлением памятью</i></dd>
+        </dl>
+        <section>
+    <section>
+        <h2>Ненумированный список 2 (UnOrder list)</h2>
+        <ul>
+            <li>Элемент списка (List item)</li>
+            <li>Элемент списка 2 (List item)</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque reprehenderit quam dolores dolore, odit molestiae distinctio eveniet aperiam repudiandae. Et iusto ea, ducimus quam quod similique laboriosam velit facere asperiores?</li>
+        </ul>
+        <section>
+            <h3 class="red-text">Нумированный список + не нумированный (Order list)</h2>
+            <ol>
+                <li>Элемент списка (List item)</li>
+                <ul>Эти элементы не нумированы!!</ul>
+                <ul>вложенный список</ul>
+                <li>Элемент списка 2 (List item)</li>
+            </ol>
+</main>    
+</body>
+</html>

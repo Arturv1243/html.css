@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My to Do list</title>
+    <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        #contayner{
+            background-color: brown;
+        }
+        span{
+            color: brown;
+            display: inline-block;
+            margin-left: 15px;
+        }
+        ul{
+            list-style-type:none;
+        }
+        li{
+            list-style-image: url(icons/unchecked_16.png);
+            background-color: rgb(207, 190, 190);
+            list-style-position: inside;
+            padding: 15px;
+            padding-left: 50px;
+        }
+        li:nth-child(odd){
+            background-color: rgb(100, 160, 160);
+        }
+        li:nth-child(even){
+            background-color: rgb(39, 88, 248);
+        }
+        li.checked{
+            background-color: rgb(175, 91, 91);
+        }
+
+        .checked{
+            list-style-image: url(icons/checked_16.png);
+            text-decoration: line-through;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <section id="contayner">
+        <h1>My to do list</h1>
+        <ul>
+            <li class>Hit the gym <span>x</span></li>
+            <li class="checked"> Pay bills <span>x</span></li>
+            <li class> Meet John <span>x</span></li>
+            <li class> Buy eggs <span>x</span></li>
+            <li class="checked"> Read Book <span>x</span></li>
+            <li class> Organize office <span>x</span></li>
+            <li class=> Eat dinner <span>x</span></li>
+            <li class=> Buy aples <span>x</span></li>
+            <li class=> Meet George <span>x</span></li>
+            <li class=> Feed the cat <span>x</span></li>
+            <li class="checked"> Write a letter <span>x</span></li>
+            <li class=> Run 1 km <span>x</span></li>
+        </ul>
+    </section>
+</body>
+</html>

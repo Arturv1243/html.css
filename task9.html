@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task9</title>
+    <script>
+    nmb = prompt('Введите трехзначное число: ');
+    var a = Number(nmb % 10);
+    var b = Number((nmb - a) / 10 % 10);
+    var c = Number((nmb - a - b * 10) / 100);
+    alert('Число наоборот: ' + (a * 100 + b * 10 + c));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

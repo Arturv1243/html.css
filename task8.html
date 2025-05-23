@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+    <script>
+var sum = prompt("Cколько у вас  денег? ");
+var price = prompt("Сколько стоит шоколад? ");
+sum = Number(sum);
+price = Number(price);
+var sell = Math.trunc(sum / price);
+var change = sum - price * sell;
+if (sell > 1) {
+  alert('Получите свои ' + sell + ' шоколадки, а также сдачу ' + (sum - price * sell) + ' рублей ');
+}
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

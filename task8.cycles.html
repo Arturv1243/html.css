@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8</title>
+    <script>
+    let arr_Week = ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье",];
+    let i = 0;
+    let stop = true;
+     while (stop == true) {
+        stop = confirm(`${arr_Week[i]}. Хотите увидеть следующий день недели?`);
+        i++;
+        if (i > 6) {
+            i = 0;
+        }
+    }
+    alert("Вывод дней недели окончен!");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

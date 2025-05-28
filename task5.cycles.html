@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+    <script>
+    let positive=0;
+    let negative=0;
+    let zero=0;
+    let even=0;
+    let odd=0;
+
+    for (let i = 1; i <= 10; i++ ) {
+        const number = prompt("Введите 10 чисел");
+        
+        if (number > 0) {
+        positive++;
+        };
+        if (number < 0) {
+        negative++;
+        };
+        if (number == 0) {
+        zero++;
+        };
+        if (number % 2 == 0) {
+        even++;
+        };
+        if (number % 2 !== 0) {
+        odd++;
+        };
+    };
+
+    alert(` Из введенных цифр - положительных: ${positive}, отрицательных: ${negative}, нулей: ${zero}, четных: ${even}, нечетных: ${odd}.`)
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

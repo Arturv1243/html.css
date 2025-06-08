@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3.arrays</title>
+    <script>
+        let fruits = ["apple", "banana", "orange", "kiwi", "grapefruit"];
+        // Сортировка массива по алфавиту
+        fruits.sort();
+        //Функция для вывода массива на экран
+        function displayFruits() {
+            document.write("<ul>");
+                fruits.forEach(function(fruit) {
+                    document.write("<li>" + fruit + "</li>");
+                });
+                document.write("</ul>");
+            }
+            // Функция для поиска фрукта в массиве
+            function findFruit(fruitName) {
+                let index = fruits.findIndex(function(fruit) {
+                    return fruit.toLowerCase() === fruitName.toLowerCase();
+                });
+                return index;
+            }
+            // Вывод отсортированного массива на экран
+            document.write("Список фруктов:");
+            displayFruits();
+            // Поиск фрукта "kiwi"
+            let index = findFruit("grapefruit");
+            if (index !== -1) {
+                document.write("Фрукт 'qrepefruit' найден в массиве на позиции " + index);
+            } else {
+                document.write("Фрукт не найден");
+            }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

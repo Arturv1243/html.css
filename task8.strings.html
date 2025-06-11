@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task8.strings.html</title>
+    <script>
+        function txt_2(str) {
+            str = str.split(" ");
+            let longeStr = "";
+            for (let index = 0; index < str.length; index++) {
+            const element = str[index];
+            if (element.length > longeStr.length) {
+            longeStr = element;
+            }
+            }
+            return longeStr;
+        }
+        console.log("May the force be with!");
+        console.log("The quick brown fox jumps over the lazy dog");
+        console.log(txt_2("May the force be with!"));
+        console.log(txt_2("The quick brown fox jumps over the lazy dog"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

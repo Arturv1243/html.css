@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task10.strings.html</title>
+    <script>
+        function strSymb(str= string, symb) {
+        let string=0;
+       let inStr = "";
+       let index = 0
+       while (true) {
+        index = str.indexOf(symb, index)
+        if (index != -1) {
+            inStr += index + ', '
+            index++
+        } else {
+            if (inStr) inStr = inStr.slice(0, inStr.length - 2)
+            return inStr
+        }
+    }
+}
+console.log(strSymb("Hello friendl!", "l"));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

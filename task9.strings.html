@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task9.strings.html</title>
+    <script>
+        function text_3(str) {
+            str = str.split(" ");
+            let midleStr = 0;
+            let sumStr = 0;
+            for (let index = 0; index < str.length; index++) {
+                const element = str[index];
+                console.log(element);
+                sumStr = sumStr + element.length;
+            }
+            midleStr = sumStr / str.length;
+            console.log(midleStr);
+            return midleStr;
+        }
+        console.log(text_3("Рандомный текст"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

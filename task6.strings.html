@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task6.strings.html</title>
+    <script>
+        function palindrome(str) {
+            let check = "";
+            for (let i = str.length - 1; i >= 0; --i) {
+                check += str[i];
+            }
+            return str == check;
+        }
+        console.log(palindrome("34534"));
+        console.log(palindrome("345543"));
+        console.log(palindrome("346"));
+        console.log(palindrome(""));
+        console.log(palindrome("723320"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

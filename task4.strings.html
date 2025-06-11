@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4.strings.html</title>
+    <script>
+        function checkSpam(str) {
+            let lowstr = str.toLowerCase();
+            return (
+                lowstr.indexOf("100% бесплатно") != -1 ||
+                lowstr.indexOf("xxx") != -1 ||
+                lowstr.indexOf("увеличение продаж") != -1 ||
+                lowstr.indexOf("только сегодня") != -1 ||
+                lowstr.indexOf("не удаляйте") != -1
+            );
+        }
+        console.log(checkSpam("Привет"));
+        console.log(checkSpam("Xxx"));
+        console.log(checkSpam("Не уДаЛяйте"));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

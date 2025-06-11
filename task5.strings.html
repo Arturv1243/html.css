@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5.strings.html</title>
+    <script>
+        function truncateString(str, num) {
+            if (str.length > num) {
+            return str.slice(0, num-3) + "...";
+        } else {
+            return str;
+        }
+    }
+    document.write(truncateString("Hello,world!"));
+    console.log(truncateString("Hello,world!", 6));
+    document.write(truncateString("Hello,world!", 6));
+    </script>
+</head>
+<body>
+    <p id="task1.1"></p>
+</body>
+</html>

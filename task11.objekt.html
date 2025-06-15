@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task11.objekt.html</title>
+    <script>
+    const rectangle={
+            leftTopX: 20,
+            leftTopY: 10,
+            rightBottomX: 16,
+            rightBottomY: 1,
+            info: function(){
+            return `Координыты левой верхней точки
+            (${this.leftTopX}), (${this.leftTopY}).
+            Координыты правой верхней точки
+            (${this.rightBottomX}), (${this.rightBottomY}).`
+            }
+        };console.log(rectangle.info());
+
+    const sdvig={
+            leftTopX: (rectangle.leftTopX+10),//сдвиг по оси X
+            leftTopY: (rectangle.leftTopY+10),//сдвиг по оси Y
+            rightBottomX: (rectangle.rightBottomX+10),//сдвиг по оси X
+            rightBottomY: (rectangle.rightBottomY+10),//сдвиг по оси Y
+            info: function(){
+            return `Координыты новой левой верхней точки
+            (${this.leftTopX}), (${this.leftTopY}).
+            Координыты новой правой верхней точки
+            (${this.rightBottomX}), (${this.rightBottomY}).`
+            }
+        };console.log(sdvig.info());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

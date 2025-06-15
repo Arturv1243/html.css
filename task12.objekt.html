@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task12.objekt.html</title>
+    <script>
+        const rectangle={
+            leftTopX: 20,
+            leftTopY: 10,
+            rightBottomX: 16,
+            rightBottomY: 1,
+            info: function(){
+            return `Координыты левой верхней точки
+            (${this.leftTopX}), (${this.leftTopY}).
+            Координыты правой верхней точки
+            (${this.rightBottomX}), (${this.rightBottomY}).`
+            }
+        };console.log(rectangle.info());
+        const point={
+            topX: 8,
+            topY: 15,
+             info: function(){
+            return `X Координыты точки
+            (${this.topX}).
+        Y Координыты точки
+            (${this.topY})`
+            }
+        }
+        console.log(point.info());
+
+        if (point<rectangle)
+        console.log("Точка внутри прямоугольника");
+        else
+        console.log("Точка не внутри прямоугольника");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

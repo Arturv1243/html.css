@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3.events.html</title>
+    <style>
+  table {
+    border: 1px solid black;    
+    }
+   td {
+     width: 20px;
+     height: 20px;
+   } 
+   .red {
+    background-color: red;
+   }
+    .green {
+    background-color: green;
+   }
+    .blue {
+    background-color: blue;
+   }
+   .gold{
+    background-color: gold;
+   }
+   .purple{
+    background-color: purple;
+   }
+   .teal{
+    background-color: teal;
+   }
+   .pink{
+    background-color: pink;
+   }
+   .yellow{
+    background-color: yellow;
+   }
+   .navy{
+    background-color: navy;
+   }
+   .maroon{
+    background-color: maroon;
+   }
+   .orchid{
+    background-color: orchid;
+   }
+   .salmon{
+    background-color: salmon;
+   }
+   .brown{
+    background-color: brown;
+   }
+   .black{
+    background-color: black;
+   }
+   .gray{
+    background-color: gray;
+   }
+   .turquoise{
+    background-color: turquoise;
+   }
+   .aqua{
+    background-color: aqua;
+   }
+   .plum{
+    background-color: plum;
+   }
+
+   p {
+    font-size: 30px;
+    font-family: Verdana;
+   }
+  </style>
+    
+</head>
+<body>
+  <table id="myTable">
+    <td class="red"></td>
+    <td class="green"></td>
+    <td class="blue"></td>
+    <td class="gold"></td> 
+    <td class="purple"></td>  
+    <td class="teal"></td>
+    <td class="pink"></td>
+    <td class="yellow"></td>
+    <td class="navy"></td>
+    <td class="maroon"></td>
+    <td class="orchid"></td>
+    <td class="salmon"></td>
+    <td class="brown"></td>
+    <td class="black"></td>
+    <td class="gray"></td>
+    <td class="turquoise"></td>
+    <td class="aqua"></td>
+    <td class="plum"></td>
+
+  </tr>  
+</table>
+<script>
+    let tds = document.querySelectorAll('td');
+    for (var i = 0; i < tds.length; i++) {
+        tds[i].onclick = function () {            
+            let st = window.getComputedStyle(this, null)['backgroundColor'];
+            p.style.color = st;
+        }
+    }
+</script>
+    <p id='p'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Quidem fugit tempora quas voluptates aliquid, a modi itaque error ex ullam, hic quo. 
+        Officia quaerat cum rem autem, iusto dolorum sapiente.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Distinctio voluptates quod illum minus voluptatem fuga magni ducimus nobis. 
+        Neque, est corrupti culpa quisquam consectetur ipsa recusandae laboriosam placeat incidunt ad?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus modi adipisci id magni voluptatibus consectetur iure facere libero architecto, ipsum eum inventore sed ea obcaecati illo fugiat nostrum quasi ab.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A iste eligendi perspiciatis commodi nemo alias nesciunt molestiae eos atque, temporibus quasi similique inventore dolorem non debitis fugit illo eius nobis.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum labore eligendi provident laborum recusandae libero pariatur quod itaque inventore eius, rem, eum nostrum vel adipisci minima praesentium soluta officiis eveniet!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere vitae adipisci natus ducimus eveniet error aperiam iure pariatur quibusdam, blanditiis consequuntur, aut minima nisi dolore. At minima dolorem facilis aliquam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi aperiam, ab quo quas laboriosam asperiores voluptatem magni sed quisquam architecto fugit reprehenderit. Eveniet sapiente qui nemo, neque unde praesentium.
+        
+    
+    
+    gray
+    turquoise
+    aqua
+    plum
+    </p>
+</body>
+</html>
